@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    @SuppressLint("CommitPrefEdits")
+
     private void setupSharedPrefs(){
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
         editor=prefs.edit();
