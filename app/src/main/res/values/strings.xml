@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SecondAssignment2</string>
+    <string name="underweight">UnderWeight</string>
+    <string name="normal">Normal</string>
+    <string name="overweight">OverWeight</string>
+    <string name="obese_class_i">Obese</string>
+</resources>

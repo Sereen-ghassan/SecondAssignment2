@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="18dp"
+    android:background="#201F23"
+    tools:context="com.example.secondassignment2.Timer">
+
+    <TextView
+        android:layout_margin="35dp"
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="00:00"
+        android:textColor="#F7F7F8"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="56sp"
+        android:layout_alignParentTop="true"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/btnStart"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_corners"
+        android:onClick="onClickStart"
+        />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@id/btnStart"
+        android:background="@drawable/rounded_corners"
+        android:text="Reset"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:onClick="resetTimer"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@id/btnReset"
+        android:background="@drawable/rounded_corners"
+        android:text="Stop"
+
+        android:onClick="onClickStop"/>
+
+
+</RelativeLayout>
